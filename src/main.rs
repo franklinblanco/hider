@@ -10,18 +10,19 @@ fn main() {
 }
 
 #[derive(Serialize, Clone)]
-pub struct InnerStruct {
+struct InnerStruct {
     pub a: u16
 }
 
+#[allow(dead_code)]
 #[derive(Serialize, Clone)]
-pub enum Enumeration {
+enum Enumeration {
     ABC,
     EDG
 }
 
 #[derive(Hideable, Serialize, Clone)]
-pub struct TestStruct {
+struct TestStruct {
     #[mark(User)]
     pub a: String,
     #[mark(Employee)]
