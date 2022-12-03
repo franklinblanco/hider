@@ -6,6 +6,7 @@ use serde::Serialize;
 
 pub use serde_json::to_value;
 
+/* 
 #[derive(Serialize, Clone)]
 struct InnerStruct {
     pub a: u16
@@ -43,4 +44,4 @@ mod tests {
         let a = TestStruct { a: "aa".into(), b: "".into(), c: crate::InnerStruct { a: 1 }, d: crate::Enumeration::ABC };
         print!("{:?}", a.hide_fields(vec!["User".into()]));
     }
-}
+}*/
