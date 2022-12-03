@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
+[lib]
 [dependencies]
 hideable-proc-macros = { git = "https://github.com/franklinblanco/hideable-proc-macros.git" }
 hideable-types = { git = "https://github.com/franklinblanco/hideable-types.git" }

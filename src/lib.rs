@@ -1,13 +1,10 @@
 pub use hideable_proc_macros::Hideable;
 pub use hideable_types::Hideable as HideableTrait;
-use serde::Serialize;
 pub use hideable_types::FieldAttribute::*;
 
+use serde::Serialize;
 
 pub use serde_json::to_value;
-fn main() {
-    println!("Hello, world!");
-}
 
 #[derive(Serialize, Clone)]
 struct InnerStruct {
