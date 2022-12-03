@@ -1,5 +1,5 @@
 pub use hideable_proc_macros::Hideable;
-pub use hideable_types::Hideable as HideableTrait;
+pub use hideable_types::Hideable;
 pub use hideable_types::FieldAttribute::*;
 
 use serde::Serialize;
